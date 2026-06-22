@@ -1,6 +1,6 @@
 "use client";
 
-import { Show, SignInButton, SignOutButton, UserButton } from "@clerk/nextjs";
+import { Show, SignInButton, UserButton } from "@clerk/nextjs";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -57,7 +57,7 @@ const Navbar = () => {
       {/* top header */}
       <div className="hidden lg:block py-3">
         <div className="blog-container flex items-center justify-between">
-          <h1 className="flex-shrink-0">
+          <h1 className="shrink-0">
             <Link
               href="/"
               className="text-2xl flex items-center font-semibold text-gray-900 hover:text-primary transition-colors duration-300"
