@@ -18,7 +18,7 @@ export default async function Home() {
   } = articles;
 
   return (
-    <div className="blog-container">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {editorPicksPrimary &&
         editorPicksSecondary.length > 0 &&
         trendingArticles.length > 0 && (
@@ -29,9 +29,9 @@ export default async function Home() {
           />
         )}
 
-      {sliderArticles.length > 0 && (
+      {/* {sliderArticles.length > 0 && (
         <FeaturedSliderSection articles={sliderArticles} />
-      )}
+      )} */}
 
       {gridArticles.length > 0 && <GridAndAds articles={gridArticles} />}
 
@@ -43,7 +43,7 @@ export default async function Home() {
             allMostRecentGridArticles={allMostRecentGridArticles}
             popularArticles={popularArticles}
           />
-        )}
+        )} 
     </div>
   );
 }
